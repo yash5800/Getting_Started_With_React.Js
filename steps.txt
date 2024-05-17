@@ -1,0 +1,4 @@
+npm create vite@latest -> to craete env
+select react
+select js
+** npm run dev -> to start server
