@@ -1,4 +1,4 @@
-import Rect,{useState} from 'react';
+import {useState} from 'react';
 
 
 function Components(){
@@ -17,7 +17,7 @@ function Components(){
         <p>Name:{name}</p>
         <p>Rank:{rank}</p>
         <button onClick={updateName}>setName</button>
-        <button onClick={updateRank}>setName</button>
+        <button onClick={updateRank}>setRank</button>
 
        </div>
    );
