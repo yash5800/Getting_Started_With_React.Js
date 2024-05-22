@@ -1,5 +1,4 @@
 {
-  "homepage": "https://yash5800.github.io/Getting_Started_With_React.Js/my_react",
   "name": "my_react",
   "private": true,
   "version": "0.0.0",
@@ -13,7 +12,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
