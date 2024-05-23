@@ -12,3 +12,16 @@ select js
 npx create-react-app my-app
 cd my-app
 npm start
+
+**deploy in github
+
+add this to json first line
+"homepage": "https://user_name.github.io/repo_name"
+add this scrips
+"predeploy":"npm run build"
+"deploy":"gh-pages -d build"
+
+1)npm install gh-pages --save-dev
+2)npm run deploy
+
+...!done
