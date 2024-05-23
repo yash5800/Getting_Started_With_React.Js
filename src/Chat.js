@@ -12,7 +12,7 @@ function Chat({ messages, addMessage }) {
 
     const handleAdderInput = () => {
         if (input.trim()) {
-            addMessage({ text: input, output: input });
+            addMessage({ text: input, output: "" });
             setInput('');
             textareaRef.current.style.height = 'auto';
         }
@@ -29,11 +29,16 @@ function Chat({ messages, addMessage }) {
                 {messages.map((msg, index) => (
                     <div key={index}>
                         <div className={style.msg}>
-                            <p>{msg.output}</p>
-                        </div>
-                        <div className={style.msg1}>
+                            <p>User:</p><br/>
                             <p>{msg.text}</p>
                         </div>
+                        {msg.output && (
+                           <div className={style.msg1}>
+                           <p>Bot's :</p><br/>
+                           <p>{msg.output}</p>
+                           </div>
+                        )}
+                        
                     </div>
                 ))}
             </div>
