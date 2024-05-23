@@ -7,3 +7,8 @@ npm run dev
 select react
 select js
 ** npm run dev -> to start server
+
+**way 2
+npx create-react-app my-app
+cd my-app
+npm start
